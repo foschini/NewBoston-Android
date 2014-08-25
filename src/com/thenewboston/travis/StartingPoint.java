@@ -31,7 +31,8 @@ public class StartingPoint extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-			
+			counter+=1; // or counter++;
+			display.setText("Your total is " + counter);;
 			}
 		});
 		
@@ -40,7 +41,9 @@ public class StartingPoint extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
+			counter-=1;
+			display.setText("Your total is " + counter);
+			
 			}
 		});
 	}

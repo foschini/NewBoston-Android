@@ -1,6 +1,7 @@
 package com.thenewboston.travis;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -29,10 +30,12 @@ public class Splash extends Activity {
 				} catch(InterruptedException e){
 					e.printStackTrace();
 				} finally{
-					Intent openStartingPoint = new Intent("com.thenewboston.travis.STARTINGPOINT");
+					
+					Intent openStartingPoint = new Intent("com.thenewboston.travis.MENU");
 					startActivity(openStartingPoint);
+					} 
 				}
-			}
+			
 		};
 		timer.start();
 		

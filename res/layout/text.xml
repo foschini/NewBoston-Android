@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:padding="25dp">
 
     <EditText
         android:id="@+id/etCommands"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="Tye a command"
+        android:hint="Type a command"
         android:password="true" />
 
 <LinearLayout
@@ -20,13 +21,15 @@
     <Button
         android:layout_weight="20"
         android:id="@+id/bResults"
+        android:text="Try Command"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_height="wrap_content"/>
 
     <ToggleButton
         android:layout_weight="80"
-        android:id="@+id/toggleButton1"
+        android:paddingBottom="10dp"
+        android:checked="true"
+        android:id="@+id/tbPassword"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="ToggleButton" />

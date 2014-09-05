@@ -2,6 +2,7 @@ package com.thenewboston.travis;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,7 +28,7 @@ public class TextPlay extends Activity{
 		//in quanto se dichiaro una classe con il modificatore final intendo una classe finale ovvero 
 		//una classe completa che non necessita di specializzazioni o estensioni e dunque è più che 
 		//logico che non sia possibile ereditarla.
-		EditText input = (EditText) findViewById(R.id.etCommands);
+		final EditText input = (EditText) findViewById(R.id.etCommands);
 		TextView display = (TextView) findViewById(R.id.tvDisplay);
 		passTog.setOnClickListener(new View.OnClickListener() {
 			
@@ -35,13 +36,14 @@ public class TextPlay extends Activity{
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				if (passTog.isChecked()){
-					
+					input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);//modifico il tipo di testo mascherando l'input
 				} else{
-					
+					input.setInputType(InputType.TYPE_CLASS_TEXT);
 				}
 				
 			
-			}});
+			}
+		});
 	}
 
 }

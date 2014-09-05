@@ -11,21 +11,33 @@
         android:hint="Tye a command"
         android:password="true" />
 
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_heigt="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100" >
+
     <Button
+        android:layout_weight="20"
         android:id="@+id/bResults"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
 
+    <ToggleButton
+        android:layout_weight="80"
+        android:id="@+id/toggleButton1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton" />
+</LinearLayout>
     <TextView
         android:id="@+id/tvResult"
-        android:text="invalid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10" 
-        android:gravity="center"/>
-
-        
-  
+        android:ems="10"
+        android:gravity="center"
+        android:text="invalid" />
 
 </LinearLayout>

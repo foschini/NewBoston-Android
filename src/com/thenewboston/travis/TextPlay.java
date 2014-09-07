@@ -28,6 +28,7 @@ public class TextPlay extends Activity{
 		//in quanto se dichiaro una classe con il modificatore final intendo una classe finale ovvero 
 		//una classe completa che non necessita di specializzazioni o estensioni e dunque è più che 
 		//logico che non sia possibile ereditarla.
+		
 		final EditText input = (EditText) findViewById(R.id.etCommands);
 		TextView display = (TextView) findViewById(R.id.tvDisplay);
 		passTog.setOnClickListener(new View.OnClickListener() {

@@ -61,13 +61,13 @@ public class TextPlay extends Activity{
 				
 				
 				if (check.contentEquals("left")){
-					display.setGravity(Gravity.LEFT);
+					display.setGravity(Gravity.START);
 					display.setText("LEFT!!");
 				} else if(check.contentEquals("center")){
 					display.setGravity(Gravity.CENTER);
 					display.setText("CENTER!!");
 				} else if (check.contentEquals("right")){
-					display.setGravity(Gravity.RIGHT);
+					display.setGravity(Gravity.END);
 					display.setText("RIGHT!!");
 				}else if (check.contentEquals("blue")){
 					display.setTextColor(Color.BLUE);

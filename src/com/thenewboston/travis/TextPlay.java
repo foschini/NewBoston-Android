@@ -1,5 +1,7 @@
 package com.thenewboston.travis;
 
+import java.util.Random;
+
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -72,11 +74,27 @@ public class TextPlay extends Activity{
 				}else if (check.contentEquals("blue")){
 					display.setTextColor(Color.BLUE);
 				}else if(check.contains("WTF")){
+					
+					Random crazy = new Random();
+					display.setText("WTF!!!");
+					display.setTextSize(crazy.nextInt(75));
+					display.setTextColor(Color.rgb(crazy.nextInt(265), crazy.nextInt(265), crazy.nextInt(265)));
+					switch (crazy.nextInt(3)) {
+						case 0:
+							display.setGravity(Gravity.START);
+							break;
+						case 1:
+						display.setGravity(Gravity.CENTER);
+							break;
+						case 2:
+						display.setGravity(Gravity.END);
+							break;
+					}
 				
 				}else {
 					display.setText("invalid");
 					display.setGravity(Gravity.CENTER);
-					display.setTextColor(Color.BLACK);
+					display.setTextColor(Color.WHITE);
 				}
 				
 			}

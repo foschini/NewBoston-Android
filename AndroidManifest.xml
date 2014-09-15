@@ -41,7 +41,8 @@
         </activity>
         <activity
             android:name="com.thenewboston.travis.Camera"
-            android:label="Photo Taker" >
+            android:label="Photo Taker" 
+            android:screenOrientation="portrait" >
             
         </activity>
         <activity 

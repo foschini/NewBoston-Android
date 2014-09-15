@@ -49,6 +49,14 @@
             android:name="com.thenewboston.travis.Email"
             android:label="Email Sender">
          </activity>
+          <activity 
+            android:name="com.thenewboston.travis.Data"
+            android:label="Data Exchanger">
+         </activity>
+         <activity 
+            android:name="com.thenewboston.travis.OpenedClass"
+            android:label="Data Exchanger">
+         </activity>
         
         <activity
             android:name="com.thenewboston.travis.Menu"

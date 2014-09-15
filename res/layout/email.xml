@@ -2,8 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical" android:layout_width="match_parent"
 	android:weightSum="100" android:layout_height="match_parent">
-	<ScrollView android:layout_weight="30" android:layout_width="fill_parent"
-		android:layout_height="fill_parent">
+	<ScrollView 
+	    android:layout_weight="20" 
+	    android:layout_width="match_parent"
+		android:layout_height="match_parent">
 
 		<LinearLayout android:orientation="vertical"
 			android:layout_width="match_parent" android:layout_height="match_parent">
@@ -34,10 +36,19 @@
 				android:layout_width="match_parent" android:id="@+id/etOutro"></EditText>
 		</LinearLayout>
 	</ScrollView>
-	<LinearLayout android:orientation="vertical"
-		android:layout_width="match_parent" android:layout_weight="80"
-		android:layout_height="fill_parent">
-		<Button android:text="Send Email" android:id="@+id/bSentEmail"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 
+	    android:layout_weight="80">
+
+		<Button
+		    android:id="@+id/bSentEmail"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="Send Email" >
+</Button>
 	</LinearLayout>
+
 </LinearLayout>

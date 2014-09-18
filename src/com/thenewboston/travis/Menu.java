@@ -59,12 +59,14 @@ public class Menu extends ListActivity{
 		case R.id.aboutUs:
 			Intent i = new Intent("com.thenewboston.travis.ABOUT");
 			startActivity(i);
-			
-			break;
+		
 		case R.id.preferences:
+			Intent p = new Intent("com.thenewboston.travis.PREFS");
 			
 			break;
-			
+		case R.id.exit:
+			finish();
+			break;
 		} 
 		return false;
 		

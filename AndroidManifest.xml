@@ -45,6 +45,19 @@
             android:screenOrientation="portrait" >
             
         </activity>
+        
+        <activity
+            android:name="com.thenewboston.travis.about"
+            android:label="About Us" 
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Dialog">
+             <intent-filter>
+                <action android:name="com.thenewboston.travis.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
         <activity 
             android:name="com.thenewboston.travis.Email"
             android:label="Email Sender">

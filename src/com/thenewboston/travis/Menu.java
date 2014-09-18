@@ -57,6 +57,8 @@ public class Menu extends ListActivity{
 		switch(item.getItemId()){
 		
 		case R.id.aboutUs:
+			Intent i = new Intent("com.thenewboston.travis.ABOUT");
+			startActivity(i);
 			
 			break;
 		case R.id.preferences:
